@@ -1,82 +1,48 @@
-*{
-   box-sizing: border-box;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  margin:0;
-  padding:0;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
-h1{
-  text-align: center;
-  margin-bottom: 70px;
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
 }
-h2{
- float: right;
- text-align: center;
- colour: black;
- margin: 0;
- border: 1px solid black;
- padding: 10px;
+
+#logo-img {
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
-section{
-  width: 90%;
-  border: 10px solid white;
+
+.navbar-brand {
+  padding-top: 25px;
 }
-div{
-  
-  background-color: darkgray;
-  border: 1px solid black;
-  position: relative;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 0; 
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
-#one>div>h2{
-  background-color: palevioletred;
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
 }
-#two>div>h2{
-  background-color: brown;
-  color: white;
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
 }
-#three>div>h2{
-  background-color: khaki;
-}
-p{
-overflow: auto;
-padding: 5px;
-border: none;
-margin: 0px;
-height: 200px;
-position: relative;
-clear: right;
-  
-}
-@media(min-width: 992px){
-  section{
-    float: left;
-    width: 33.33%;
-  }
-}
-@media(min-width: 768px) and (max-width: 991px){
-  section{
-    float: left;
-  }
-  #one{
-    width: 50%;
-  }
-  #two{
-    width: 50%;
-  }
-  #three{
-    width: 100%;
-  }
-}
-@media(max-width: 767px){
-  section{
-    width:100%;
-  }
-  p{
-    height: 100px;
-    overflow: auto;
-  }
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
 }
